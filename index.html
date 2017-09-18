@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Zakupy</title>
     <link href="main.css" rel="stylesheet" type="text/css"/>
-    <script src="main.js"></script>
-
 </head>
 <body>
 <header>
@@ -13,10 +11,27 @@
         Appka do zakupow
     </div>
 </header>
-<div id="container">
+<div id="input">
     Product: <input type="text" id="shopping-field" name="product">
     <button type="button" id="add-button">Add!</button>
 </div>
+<div id="shopping-list">
+    Shopping list:
     <ul id="list"></ul>
+</div>
+
+
+<script>
+    document.getElementById("add-button").onclick = function () {
+        var text = document.getElementById("shopping-field").value;
+        var list = document.getElementById("list");
+        var li = document.createElement("li");
+        var textnode = document.createTextNode(text);
+        li.appendChild(textnode);
+        list.appendChild(li);
+        document.getElementById("shopping-field").value = "";
+    }
+
+</script>
 </body>
 </html>

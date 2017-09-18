@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 header{
@@ -10,13 +11,18 @@ header{
 }
 
 header > div {
-    text-align: center;
     color: white;
     font-size: 50px;
     padding: 50px;
 }
 
-#container{
-    margin-top: 40px;
-    text-align: center;
+#input{
+    margin: 40px 0 60px;
+}
+#shopping-list{
+    font-size: 20px;
+}
+#list{
+    margin-left: auto;
+    margin-right: auto;
 }
