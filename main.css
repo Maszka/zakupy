@@ -1,0 +1,22 @@
+body{
+    margin: 0px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    height: 200px;
+    background-color: #1cb5ff;
+}
+
+header > div {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 50px;
+}
+
+#container{
+    margin-top: 40px;
+    text-align: center;
+}
