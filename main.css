@@ -18,11 +18,15 @@ header > div {
 
 #input{
     margin: 40px 0 60px;
-}
-#shopping-list{
     font-size: 20px;
 }
-#list{
-    margin-left: auto;
-    margin-right: auto;
+
+#shopping-list{
+    font-size: 20px;
+    display: inline-block;
 }
+
+#list li {
+    text-align: left;
+}
+
