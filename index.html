@@ -22,16 +22,26 @@
 
 
 <script>
+    function removing(li) {
+        return function() {
+            li.parentNode.removeChild(li)
+        }
+    }
     document.getElementById("add-button").onclick = function () {
         var text = document.getElementById("shopping-field").value;
         var list = document.getElementById("list");
         var li = document.createElement("li");
         var textnode = document.createTextNode(text);
         li.appendChild(textnode);
+        li.addEventListener("click", removing(li))
         list.appendChild(li);
         document.getElementById("shopping-field").value = "";
+
     }
 
+
+
 </script>
+
 </body>
 </html>

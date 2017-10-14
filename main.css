@@ -28,5 +28,6 @@ header > div {
 
 #list li {
     text-align: left;
+    cursor: pointer;
 }
 
